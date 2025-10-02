@@ -7,5 +7,5 @@ services:
       - "5500:5500"
     environment:
       - ORACLE_PWD=oracle
-    volume:
+    volumes:
       - C:\\temp:/tmp/oracle-db
