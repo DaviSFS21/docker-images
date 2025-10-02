@@ -1,0 +1,11 @@
+services:
+  oracle-db:
+    image: davisfs21/oracle-xe:18c
+    container_name: oracle-db
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      - ORACLE_PWD=oracle
+    volume:
+      - C:\\temp:/tmp/oracle-db
